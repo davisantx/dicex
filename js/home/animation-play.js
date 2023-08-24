@@ -1,6 +1,6 @@
 let btn = document.querySelector('.home-button-play')
 let content = document.querySelector('.home-content')
-let game = document.querySelector('.game')
+let game = document.querySelector('.game-style-content')
 
 btn.addEventListener('click', () => {
     animation()
@@ -13,9 +13,9 @@ const animation = (() => {
 
 const disableHomeScreen = (() => {
 
-    game.classList.add('game-content-animation')
+    game.classList.add('game-content-animation-start')
     setTimeout(() => {
-        game.classList.remove("d-none")
+        game.classList.remove('d-none')
     }, 1400)
     setTimeout(() => {
         content.classList.add('d-none')
@@ -24,7 +24,7 @@ const disableHomeScreen = (() => {
     }, 1500)
     
     setTimeout(() => {
-       game.classList.remove('game-content-animation')
+       game.classList.remove('game-content-animation-start')
        console.log('ahahahah')
     }, 3300)
 })

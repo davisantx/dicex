@@ -9,6 +9,7 @@ const portuguese = {
     '.home-title': 'Começar um novo jogo em dicex',
     '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!',
     '.game-style-dice-title': 'Selecione um dado'
+    
 }
 
 const english = {

@@ -18,11 +18,12 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- add JS -->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
   <script src="js/utils.js" defer></script>
   <script src="js/home/animation-play.js" defer></script>
+
   <script src="js/language.js" defer></script>
   <script src="js/script.js" defer></script>
+  <script src="js/game/style/style.js" defer></script>
 
 </head>
 
@@ -70,15 +71,27 @@
       </nav>
   </header>
 
-  <main class="game container d-flex justify-content-center d-none align-items-center">
-    <section class="game-style-dice-glass text-center m-5 border">
-      <h1 class="game-style-dice-title">Selected a dice</h1>
+  <main class="game-style-content container d-flex justify-content-center d-none align-items-center">
+    <section class="about-content-glass game-style-dice-glass text-center m-5 border">
+      <h1 class="game-style-dice-title m-3">Selected a dice</h1>
       <div class="row justify-content-center align-items-center g-2">
         <div class="col">
           <img src="" alt="" class="dice-style-one">
         </div>
         <div class="col">
           <img src="" alt="" class="dice-style-two">
+        </div>
+        <div class="row">
+          <section class="col">
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style">
+              Selecionar
+            </button>
+          </section>
+          <section class="col">
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-random-style">
+              Escolher aleatoriamente
+            </button>
+          </section>
         </div>
       </div>
     </section>

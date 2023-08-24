@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --home-name-site-color: rgb(70, 64, 66);
+    --github-color: #010409;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, red, yellow);
@@ -46,7 +51,7 @@ body {
 }
 .home-title-name-site {
     font-weight: 600;
-    color: rgb(70, 64, 66);
+    color: var(--home-name-site-color);
 }
 .home-button-play {
     height: 80px;
@@ -60,10 +65,17 @@ body {
     background: rgb(70, 64, 66);
 }
 
+.game-style-button-select-style, .game-style-button-select-random-style {
+    height: 80px;
+    width: 250px;
+    background-color: rgb(0, 234, 255);
+    box-shadow: 0 0 5px black, 0 0 10px orange, 0 0 20px rgb(38, 38, 68);
+}
+
 .home-button-repository {
     height: 80px;
     width: 250px;
-    background-color: #010409;
+    background-color: var(--github-color);
     box-shadow: 0 0 5px black, 0 0 10px orange, 0 0 20px rgb(38, 38, 68);
 }
 
@@ -105,11 +117,12 @@ body {
     height: 60vh;
     width: 80vw;
 }
+
 .game {
     height: 90vh;
     width: 100vw;
 }
-.game-content-animation {
+.game-content-animation-start {
     animation-name: game-deslize;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -127,4 +140,45 @@ body {
     100% {
         transform: translate(0, 0);
     }
+}
+
+.game-content-animation-end {
+    animation-name: deslize-end;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: infinite;
+}
+
+@keyframes deslize-end {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        transform: translate(-100vw, 0);
+    }
+}
+
+/* about */
+.about-content {
+    height: 90vh;
+}
+
+.about-content-glass {
+    height: 70vh;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.about-img-perfil {
+    height: 40vh;
+    border-radius: 50%;
+    border: 1px solid red;
 }
