@@ -1,15 +1,22 @@
-class A {
+class Utils {
 
     constructor() {}
 
-    static getElement(element) {
+    static getElements(element) {
         console.log('i am static method')
-        return (document.querySelector(element))
+        return $(element)
     }
-    static addEvent(element, event, instructions) {
-        element.addEventListener((event), () => {
-            instructions()
-        })
+
+    static getElement(element, number) {
+        return ($(element).get(number))
+    }
+
+    static addEventClick(element, instructions = ((e) => {})) {
+        element.click(instructions())
     }
 }
 
+
+// let getElements = ((element) => {
+//     return $(element)
+// })

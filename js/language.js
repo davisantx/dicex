@@ -1,4 +1,4 @@
-const dropdown = document.querySelector(".home-navbar-dropdown");
+const dropdown = Utils.getElement('.home-navbar-dropdown', 0);
 
 const languages = {
     'english': document.getElementById('option-english'),
@@ -7,12 +7,14 @@ const languages = {
 
 const portuguese = {
     '.home-title': 'Começar um novo jogo em dicex',
-    '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!'
+    '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!',
+    '.game-style-dice-title': 'Selecione um dado'
 }
 
 const english = {
     '.home-title': 'Start a new game in dicex',
-    '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!'
+    '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!',
+    '.game-style-dice-title': 'Selected a dice'
 }
 
 const textNavbar = {
@@ -48,19 +50,18 @@ const changeLanguage = ((response) => {
         ++count;
     }
     if(response) {
-        document.querySelector('.navbar-dropdown').innerHTML = textNavbar['portuguese']
+        Utils.getElement('.navbar-dropdown', 0).innerHTML = textNavbar['portuguese']
         changeLanguageOfTexts(portuguese, count)
-
     }
     if(!response) {
-        document.querySelector('.navbar-dropdown').innerHTML = textNavbar['english']
+        Utils.getElement('.navbar-dropdown', 0).innerHTML = textNavbar['english']
         changeLanguageOfTexts(english, count)
     }
 })
 
 const changeLanguageOfTexts = ((language, size) => {
     for(let i = 0; i < size; ++i) {
-        document.querySelector(Object.keys(language)[i]).innerHTML = (Object.values(language)[i])
+        Utils.getElement(Object.keys(language)[i], 0).innerHTML = (Object.values(language)[i])
         // console.log((Object.values(language)[i]))    
     }
 })

@@ -10,7 +10,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, red, yellow);
 }
-
+.home-content, .game {
+    height: 90vh;
+}
 .navbar-item {
     font-size: 1.15rem;
 }
@@ -96,5 +98,33 @@ body {
     100% {
         transform: translate(0, 0px);
         
+    }
+}
+
+.game-style-dice-glass {
+    height: 60vh;
+    width: 80vw;
+}
+.game {
+    height: 90vh;
+    width: 100vw;
+}
+.game-content-animation {
+    animation-name: game-deslize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: infinite;
+}
+
+@keyframes game-deslize {
+    0% {
+        transform: translate(100vw, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }

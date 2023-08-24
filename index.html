@@ -9,10 +9,21 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/home/animation-play.js" defer></script>
-    <script src="js/language.js" defer></script>
-    <script src="js/script.js" defer></script>
+
+  <!-- add JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+
+
+  <!-- add CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- add JS -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/home/animation-play.js" defer></script>
+  <script src="js/language.js" defer></script>
+  <script src="js/script.js" defer></script>
+
 </head>
 
 <body class="vh-100">
@@ -58,10 +69,26 @@
         </div>
       </nav>
   </header>
-  <main class="home-content container-md d-flex align-items-center brder p-5">
+
+  <main class="game container d-flex justify-content-center d-none align-items-center">
+    <section class="game-style-dice-glass text-center m-5 border">
+      <h1 class="game-style-dice-title">Selected a dice</h1>
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="col">
+          <img src="" alt="" class="dice-style-one">
+        </div>
+        <div class="col">
+          <img src="" alt="" class="dice-style-two">
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <main class="home-content container-md d-flex align-items-center p-5">
     <section class="home pt-5">
       <div class="row b">
-        <div class="col-8 text-black text mt-5 pt-5 font-weight-1000 b">
+        <div class="col-8 text-black text mt-2 font-weight-1000 b">
           <div class="col">
             <h1 class="home-title">Start a new game in <span class="home-title-name-site">dicex</span></h1>
           </div>
@@ -97,17 +124,20 @@
     
     
   </main>
+
+  
   <footer>
     
   </footer>
 
 
-
-  <!-- <script type="module" src="/main.js"></script> -->
-
   <!-- Bootstrap JavaScript Libraries -->
   
 </body>
+
+   <!--  jQuery -->
+   
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
@@ -115,5 +145,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
 
 </html>
