@@ -1,6 +1,6 @@
-const btnSelectStyle = Utils.getElement('.game-style-button-select-style', 0)
-const btnSelectRandomStyle = Utils.getElement('.game-style-button-select-random-style', 0)
-const gameStyleContent = Utils.getElement('.game-style-content', 0)
+const btnSelectStyle = Element.getElement('.game-style-button-select-style', 0)
+const btnSelectRandomStyle = Element.getElement('.game-style-button-select-random-style', 0)
+const gameStyleContent = Element.getElement('.game-style-content', 0)
 
 btnSelectStyle.addEventListener('click', () => {
     animationEnd()

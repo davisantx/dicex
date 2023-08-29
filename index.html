@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- add JS -->
-  <script src="js/utils.js" defer></script>
+  <script src="js/utils/element.js" defer></script>
+  <script src="js/utils/animation.js" defer></script>
   <script src="js/home/animation-play.js" defer></script>
 
   <script src="js/language.js" defer></script>
@@ -34,7 +35,6 @@
           <a class="navbar-brand" id="img-nav" href="index.html">
             <!-- <img src="img/SOSBEE.jpg" alt="" class="img-fluid"
               height="280px" width="280px" padding="0px"> -->
-
               <h3>dicex</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,7 +51,7 @@
             <li class="nav-item">
               <a href="about.html" class="nav-item nav-link white fw-bold navbar-item"> About </a>
             </li>
-            <li>
+            <li class="nav-item">
               <div class="content">
                 <div class="dropdown">
                   <button class="btn dropdown-toggle navbar-dropdown text-white fw-bold p-0 p-md-2" type="button" data-bs-toggle="dropdown">Language (EN)
@@ -73,7 +73,7 @@
 
   <main class="game-style-content container d-flex justify-content-center d-none align-items-center">
     <section class="about-content-glass game-style-dice-glass text-center m-5 border">
-      <h1 class="game-style-dice-title m-3">Selected a dice</h1>
+      <h1 class="game-style-dice-title m-3">Select a dice for the duel</h1>
       <div class="row justify-content-center align-items-center g-2">
         <div class="col">
           <img src="" alt="" class="dice-style-one">
@@ -84,12 +84,39 @@
         <div class="row">
           <section class="col">
             <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style">
-              Selecionar
+              Select
             </button>
           </section>
           <section class="col">
             <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-random-style">
-              Escolher aleatoriamente
+              Randomly choose
+            </button>
+          </section>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <main class="game container d-flex justify-content-center d-none align-items-center">
+    <section class="game-background-glass text-center m-5 border">
+      <h1 class="game-style-dice-title m-3">Start!</h1>
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="col">
+          <img src="" alt="" class="dice-style-one">
+        </div>
+        <div class="col">
+          <img src="" alt="" class="dice-style-two">
+        </div>
+        <div class="row">
+          <section class="col">
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style">
+              Select
+            </button>
+          </section>
+          <section class="col">
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-random-style">
+              Randomly choose
             </button>
           </section>
         </div>
@@ -119,7 +146,6 @@
             <div class="col-6">
               <a href="http://github.com/davisantx/dicex">
                 <button type="button" class="btn btn-lg mt-5 text-white fw-bold home-button-repository">
-                
                   VIEW PROJECT REPOSITORY
                 </button>
               </a>
