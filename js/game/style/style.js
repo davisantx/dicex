@@ -1,13 +1,20 @@
-const btnSelectStyle = Element.getElement('.game-style-button-select-style', 0)
+const btnSelectDiceDark = Element.getElement('.game-style-button-select-style-dice-dark', 0)
+const btnSelectDiceRed = Element.getElement('.game-style-button-select-style-dice-red', 0)
 const btnSelectRandomStyle = Element.getElement('.game-style-button-select-random-style', 0)
 const gameStyleContent = Element.getElement('.game-style-content', 0)
 
-btnSelectStyle.addEventListener('click', () => {
+btnSelectDiceRed.addEventListener('click', () => {
+    animationEnd()
+})
+btnSelectDiceDark.addEventListener('click', () => {
     animationEnd()
 })
 
 btnSelectRandomStyle.addEventListener('click', () => {
-    animationEnd()
+    setTimeout(() => {
+        animationEnd()
+    }, 20000)
+    
 })
 
 const animationEnd = (() => {

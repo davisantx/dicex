@@ -16,6 +16,9 @@
 
   <!-- add CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home/style.css">
+  <link rel="stylesheet" href="css/game-style/style.css">
+
 
   <!-- add JS -->
   <script src="js/utils/element.js" defer></script>
@@ -25,10 +28,14 @@
   <script src="js/language.js" defer></script>
   <script src="js/script.js" defer></script>
   <script src="js/game/style/style.js" defer></script>
+  <script src="js/game/style/animation.js" defer></script>
+  <script src="js/game/style/generate-random-dice.js" defer></script>
 
 </head>
 
 <body class="vh-100">
+
+  <!-- navbar -->
   <header class="">
     <nav class="container px-4 navbar navbar-expand-md navbar-dark">
         <div class="container">
@@ -46,10 +53,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-item text-white nav-link fw-bold navbar-item"> Home </a>
+              <a href="index.html" class="nav-item text-white nav-link fw-bold navbar-item navbar-item1"> Home </a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-item nav-link white fw-bold navbar-item"> About </a>
+              <a href="about.html" class="nav-item nav-link white fw-bold navbar-item navbar-item2"> About </a>
             </li>
             <li class="nav-item">
               <div class="content">
@@ -71,33 +78,44 @@
       </nav>
   </header>
 
+<!-- content -->
+
+  <!-- select a theme -->
   <main class="game-style-content container d-flex justify-content-center d-none align-items-center">
-    <section class="about-content-glass game-style-dice-glass text-center m-5 border">
-      <h1 class="game-style-dice-title m-3">Select a dice for the duel</h1>
-      <div class="row justify-content-center align-items-center g-2">
-        <div class="col">
-          <img src="" alt="" class="dice-style-one">
-        </div>
-        <div class="col">
-          <img src="" alt="" class="dice-style-two">
-        </div>
-        <div class="row">
-          <section class="col">
-            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style">
+    <section class="about-content-glass game-style-dice-glass text-center m-5">
+      <h1 class="game-style-dice-title m-3 fw-bold">Select a dice for the duel</h1>
+      <div class=" d-flex justify-content-center align-items-center game-style-container">
+        <div class="row g-2">
+          <div class="col">
+            <div class="selected-area p-5">
+              <img src="assets/img/dices/theme-red/dice1.png" alt="" class="dice-style">
+            </div>
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-style-dice-red">
               Select
             </button>
-          </section>
-          <section class="col">
-            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-random-style">
+          </div>
+          <div class="col">
+            <div class="selected-area p-5">
+              <img src="assets/img/dices/theme-dark/dice1.png" alt="" class="dice-style">
+           </div>
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-style-dice-dark">
+              Select
+            </button>
+          </div>
+          <div class="col">
+            <div class="selected-area p-5">
+              <img src="assets/img/dices/misterious/misterious.png" alt="" class="dice-style">
+            </div>
+            <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-random-style">
               Randomly choose
             </button>
-          </section>
+          </div>
         </div>
       </div>
     </section>
     
   </main>
-
+<!-- 
   <main class="game container d-flex justify-content-center d-none align-items-center">
     <section class="game-background-glass text-center m-5 border">
       <h1 class="game-style-dice-title m-3">Start!</h1>
@@ -123,8 +141,9 @@
       </div>
     </section>
     
-  </main>
+  </main> -->
 
+  <!-- home -->
   <main class="home-content container-md d-flex align-items-center p-5">
     <section class="home pt-5">
       <div class="row b">

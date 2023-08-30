@@ -7,8 +7,11 @@ class Animation {
             elementIn.classList.remove('d-none')
             elementIn.classList.add(animationInScreen)
         }, timeOutScreen)
+        this.end(elementIn, animationInScreen, timeInNewScreen)
+    }
+    static end(elementIn, animationInScreen, timeInNewScreen) {
         setTimeout(() => {
             elementIn.classList.remove(animationInScreen)
         }, timeInNewScreen)
-    }       
+    }
 }

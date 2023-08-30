@@ -6,18 +6,25 @@ const languages = {
 }
 
 const portuguese = {
+    '.navbar-item1': 'Inicio',
+    '.navbar-item2': 'Sobre',
     '.home-title': 'Começar um novo jogo em dicex',
     '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!',
     '.game-style-dice-title': 'Selecione um dado para o duelo',
-    '.game-style-button-select-style': 'Selecione',
-    '.game-style-button-select-random-style': 'Escolher aleatoriamente'
+    '.game-style-button-select-style-dice-red': 'Selecione',
+    '.game-style-button-select-style-dice-dark': 'Selecione',
+    '.game-style-button-select-random-style': 'Escolher aleatoriamente',
+    
 }
 
 const english = {
+    '.navbar-item1': 'Home',
+    '.navbar-item2': 'About',
     '.home-title': 'Start a new game in dicex',
     '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!',
     '.game-style-dice-title': 'Select a dice for the duel',
-    '.game-style-button-select-style': 'Select',
+    '.game-style-button-select-style-dice-red': 'Select',
+    '.game-style-button-select-style-dice-dark': 'Select',
     '.game-style-button-select-random-style': 'Randomly choose'
 }
 

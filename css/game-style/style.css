@@ -1,0 +1,93 @@
+.game-style-dice-glass {
+    height: 60vh;
+    width: 80vw;
+}
+
+.game {
+    height: 90vh;
+    width: 100vw;
+}
+.game-content-animation-start {
+    animation-name: game-deslize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: infinite;
+}
+
+@keyframes game-deslize {
+    0% {
+        transform: translate(100vw, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.game-content-animation-end {
+    animation-name: deslize-end;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: infinite;
+}
+
+@keyframes deslize-end {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        transform: translate(-100vw, 0);
+    }
+}
+
+.game-style-container {
+    height: 60vh;
+}
+
+.dice-style {
+    height: 20vh;
+    transform: translateX(0px);
+    transition: 0.5s all;
+}
+.dice-style-one  { 
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 40px 10px rgb(207, 222, 72);
+}
+.dice-style-two {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 40px 10px rgb(207, 222, 72);
+}
+.dice-style-three {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 40px 10px rgb(207, 222, 72);
+}
+
+.game-style-button-select-style {
+    height: 70px;
+    width: 200px;
+    box-shadow: 0 0 5px black, 0 0 10px orange, 0 0 20px rgb(38, 38, 68);
+    transition: 0.5s all;
+}
+.game-style-button-select-style:hover {
+    transform: translateY(-5px);
+}
+.game-style-button-select-style-dice-dark {
+    background-color: black;
+    color: white;
+}
+.game-style-button-select-style-dice-red {
+    background-color: rgb(85, 23, 23);
+    color: white;
+}
+
+.game-style-button-select-random-style {
+    background-color: rgb(241, 1, 1);
+    color: white;
+}
