@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* game-style-dice */
+:root {
+    --home-name-site-color: rgb(70, 64, 66);
+    --github-color: #010409;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}

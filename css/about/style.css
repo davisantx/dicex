@@ -14,7 +14,11 @@
 }
 
 .about-img-perfil {
-    height: 40vh;
+    height: 31vh;
     border-radius: 50%;
     border: 1px solid red;
+}
+
+.social-media {
+    height: 60px;
 }

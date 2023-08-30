@@ -11,10 +11,7 @@ btnSelectDiceDark.addEventListener('click', () => {
 })
 
 btnSelectRandomStyle.addEventListener('click', () => {
-    setTimeout(() => {
-        animationEnd()
-    }, 20000)
-    
+    animationEnd()
 })
 
 const animationEnd = (() => {
