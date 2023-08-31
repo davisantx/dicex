@@ -12,13 +12,41 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.about-content-social-media-container {
+    background: rgba(210, 207, 13, 0.169);
+    box-shadow: 0 8px 32px 0 rgba(131, 135, 31, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 .about-img-perfil {
     height: 31vh;
     border-radius: 50%;
-    border: 1px solid red;
+}
+
+
+.about-content-social-media-container a {
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+.about-content-social-media-container a:hover {
+    border-radius: 20px;
+    background-color: rgba(136, 134, 36, 0.5);
 }
 
 .social-media {
-    height: 60px;
+    height: 40px;
+}
+
+.about-content-i-am {
+    font-size: 4.7rem;
+}
+.about-content-i-am .about-content-my-name {
+    color: rgb(203, 44, 44);
+}
+.about-content-i-am-description {
+    font-size: 1.5rem;
+    color: rgb(34, 33, 33);
 }

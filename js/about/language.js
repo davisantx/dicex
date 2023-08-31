@@ -9,31 +9,17 @@ const portuguese = {
     '.navbar-item1': 'Inicio',
     '.navbar-item2': 'Sobre',
     '.navbar-dropdown': 'Linguagem (PT-BR)',
-    '.home-title': 'Começar um novo jogo em dicex',
-    '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!',
-    '.home-button-play': 'VAMOS JOGAR',
-    '.home-button-repository' : 'VER REPOSITÓRIO DO PROJETO',
-    '.game-style-dice-title': 'Selecione um dado para o duelo',
-    '.game-style-button-select-style-dice-red': 'Selecione',
-    '.game-style-button-select-style-dice-dark': 'Selecione',
-    '.game-style-button-select-random-style': 'Escolher aleatoriamente',
     '.about-content-description': 'Eu sou estudante do IFCE',
-    '.about-content-i-am-description': 'tenho 17 years, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.'
+    '.about-content-i-am': "Olá, eu sou o <span class='about-content-my-name'> davi </span>,",
+    '.about-content-i-am-description': 'tenho 17 anos, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.'
 }
 
 const english = {
     '.navbar-item1': 'Home',
     '.navbar-item2': 'About',
     '.navbar-dropdown': 'Language (EN)',
-    '.home-title': 'Start a new game in dicex',
-    '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!',
-    '.home-button-play': 'LET´S PLAY',
-    '.home-button-repository' : 'VIEW PROJECT REPOSITORY',
-    '.game-style-dice-title': 'Select a dice for the duel',
-    '.game-style-button-select-style-dice-red': 'Select',
-    '.game-style-button-select-style-dice-dark': 'Select',
-    '.game-style-button-select-random-style': 'Randomly choose',
     '.about-content-description': 'I am IFCE student',
+    '.about-content-i-am': "Hello, I'm  <span class='about-content-my-name'> davi </span>",
     '.about-content-i-am-description': "I'm 17 years old, and I'm currently in the 6th semester of the integrated computer science course at IFCE Campus Itapipoca."
 }
 
