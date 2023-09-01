@@ -15,8 +15,11 @@ class Element {
         return $(element)
     }
 
+    static addAttribute(element, attributeName, newValueAttibute) {
+        element.attr(attributeName, newValueAttibute)
+    }
     static addEventClick(element, instructions = ((e) => {})) {
-        // element.addEventListerner('click', instructions())
+        // element.click()
     }
 }
 

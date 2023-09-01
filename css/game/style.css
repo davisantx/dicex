@@ -1,3 +1,42 @@
 .dices {
-    height: 10vh;
+    
+    height: 20vh;
+}
+.dices-play {
+    animation-name: cair;
+    animation-duration: 0.7s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: initial;
+}
+
+@keyframes cair {
+    0% {
+        transform: translate(0, -100vh) rotate(0deg);
+    }
+    25% {
+        transform: translate(0, -75vh) rotate(180deg);
+    }
+    50% {
+        transform: translate(0, -50vh) rotate(360deg);
+    }
+    75% {
+        /* transform: translate(0, -25vh) rotate(720deg); */
+        transform: translate(0, -25vh) rotate(720deg);
+    }
+    80% {
+        transform: translate(0, -2vh) rotate(1050deg);
+    }
+    90% {
+        transform: translate(0, -1vh) rotate(1020deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(1080deg);
+    }
+}
+
+.game-play-title {
+    
+}
+.game-button-play {
+    
 }

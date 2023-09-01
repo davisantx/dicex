@@ -18,7 +18,9 @@ const portuguese = {
     '.game-style-button-select-style-dice-dark': 'Selecione',
     '.game-style-button-select-random-style': 'Escolher aleatoriamente',
     '.about-content-description': 'Eu sou estudante do IFCE',
-    '.about-content-i-am-description': 'tenho 17 years, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.'
+    '.about-content-i-am-description': 'tenho 17 years, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.',
+    '.game-play-title': 'Iniciar!',
+    '.game-button-to-play': 'JOGAR'
 }
 
 const english = {
@@ -34,7 +36,9 @@ const english = {
     '.game-style-button-select-style-dice-dark': 'Select',
     '.game-style-button-select-random-style': 'Randomly choose',
     '.about-content-description': 'I am IFCE student',
-    '.about-content-i-am-description': "I'm 17 years old, and I'm currently in the 6th semester of the integrated computer science course at IFCE Campus Itapipoca."
+    '.about-content-i-am-description': "I'm 17 years old, and I'm currently in the 6th semester of the integrated computer science course at IFCE Campus Itapipoca.",
+    '.game-play-title': 'Start!',
+    '.game-button-to-play': 'TO PLAY'
 }
 
 const textNavbarEnglish = {
