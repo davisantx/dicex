@@ -25,13 +25,13 @@
   <script src="js/utils/animation.js" defer></script>
   <script src="js/home/animation-play.js" defer></script>
 
-  <script src="js/game/language.js" defer></script>
-  <script src="js/language.js" defer></script>
+  
   <script src="js/script.js" defer></script>
   <script src="js/game/style/style.js" defer></script>
   <script src="js/game/style/animation.js" defer></script>
   <script src="js/game/style/generate-random-dice.js" defer></script>
   <script src="js/game/script.js" defer></script>
+  <script src="js/language.js" defer></script>
   
 
 </head>
@@ -43,8 +43,6 @@
     <nav class="container-md px-4 navbar navbar-expand-md navbar-dark">
         <div class="container">
           <a class="navbar-brand" id="img-nav" href="index.html">
-            <!-- <img src="img/SOSBEE.jpg" alt="" class="img-fluid"
-              height="280px" width="280px" padding="0px"> -->
               <h3>dicex</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -120,9 +118,11 @@
   </main>
 <!-- game -->
   <main class="game container d-flex d-none justify-content-center align-items-center">
-    <section class="game-background-glass text-center m-5">
-      <h1 class="game-play-title m-3 mb-5 p-5">Start!</h1>
-      <div class="row justify-content-center align-items-center g-2">
+    <section class="game-background text-center m-5">
+      <div class="mb-5">
+        <h1 class="game-play-title m-3 mb-5 p-5 fw-bold">Iniciar!</h1>
+      </div>
+      <div class="row mb-5 justify-content-center align-items-center g-2">
         <div class="col">
           <img src="assets/img/dices/theme-dark/dice1.png" alt="" class="dices dice-player1">
         </div>
@@ -130,8 +130,8 @@
           <img src="assets/img/dices/theme-dark/dice1.png" alt="" class="dices dice-player2">
         </div>
         <div class="row d-flex justify-content-center mt-5">
-          <button type="button" class="btn btn-lg mt-5 fw-bold game-button-to-play">
-            TO PLAY
+          <button type="button" class="btn btn-lg mt-5 fw-bold game-button-to-play gpb">
+            JOGAR
           </button>
         </div>
       </div>

@@ -1,13 +1,14 @@
-const buttonPlay = Element.getElement('.game-button-play', 0)
+const buttonPlay = Element.getElement('.game-button-to-play', 0)
 const gameTitle = Element.getElement('.game-play-title', 0)
 var randomNumPlayer1;
 var randomNumPlayer2;
 
 let changeNumber = true
 
-var audio = new Audio('assets/audio/dice.mp3')
 
 buttonPlay.addEventListener("click", () => {
+    var audio = new Audio('assets/audio/dice.mp3')
+
     audio.play()
     gameTitle.innerHTML = '...'
     dicePlayer1.classList.add('dices-play')
@@ -16,8 +17,17 @@ buttonPlay.addEventListener("click", () => {
     var changeNumberDice = setInterval(() => {
         randomNumPlayer1 = Math.floor((Math.random() * 6) + 1)
         randomNumPlayer2 = Math.floor((Math.random() * 6) + 1)
-        dicePlayer1.setAttribute("src", dicesTheme[0] + 'dice' + randomNumPlayer1 + '.png')
-        dicePlayer2.setAttribute("src", dicesTheme[0] + 'dice' + randomNumPlayer2 + '.png') 
+        if(randomDice) {
+            dicePlayer1.setAttribute("src", dicesTheme[randomNumber] + 'dice' + randomNumPlayer1 + '.png')
+            dicePlayer2.setAttribute("src", dicesTheme[randomNumber] + 'dice' + randomNumPlayer2 + '.png') 
+        }else if(diceDark) {
+            dicePlayer1.setAttribute("src", dicesTheme[0] + 'dice' + randomNumPlayer1 + '.png')
+            dicePlayer2.setAttribute("src", dicesTheme[0] + 'dice' + randomNumPlayer2 + '.png') 
+        }else {
+            dicePlayer1.setAttribute("src", dicesTheme[1] + 'dice' + randomNumPlayer1 + '.png')
+            dicePlayer2.setAttribute("src", dicesTheme[1] + 'dice' + randomNumPlayer2 + '.png') 
+        }
+        
     }, 20)
  
     setTimeout(() => {

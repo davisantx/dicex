@@ -69,7 +69,7 @@
     box-shadow: 6px 6px 40px 10px rgb(207, 222, 72);
 }
 
-.game-style-button-select-style {
+.game-style-button-select-style, .game-button-to-play {
     height: 70px;
     width: 200px;
     box-shadow: 0 0 5px black, 0 0 10px orange, 0 0 20px rgb(38, 38, 68);
@@ -87,7 +87,7 @@
     color: white;
 }
 
-.game-style-button-select-random-style {
+.game-style-button-select-random-style, .game-button-to-play {
     background-color: rgb(241, 1, 1);
     color: white;
 }

@@ -7,8 +7,8 @@ const dicesTheme = [
     'assets/img/dices/theme-red/'
 ]
 
-// buttonSelectDiceRandom.addEventListener('click', () => {
-//     randomNumber = Math.floor(Math.random() * 2)
-//     dicePlayer1.setAttribute('src', dicesTheme[randomNumber] + 'dice1.png')
-//     dicePlayer2.setAttribute('src', dicesTheme[randomNumber] + 'dice1.png')
-// })
+buttonSelectDiceRandom.addEventListener('click', () => {
+    randomNumber = Math.floor(Math.random() * 2)
+    dicePlayer1.setAttribute('src', dicesTheme[randomNumber] + 'dice1.png')
+    dicePlayer2.setAttribute('src', dicesTheme[randomNumber] + 'dice1.png')
+})
