@@ -1,6 +1,6 @@
-const buttonSelectDiceDark = Element.getElement(".game-style-button-select-style-dice-dark", 0)
-const buttonSelectDiceRed = Element.getElement(".game-style-button-select-style-dice-red", 0)
-const buttonSelectDiceRandom = Element.getElement(".game-style-button-select-random-style", 0)
+const buttonSelectDiceDark = Element.getElements(".game-style-button-select-style-dice-dark")
+const buttonSelectDiceRed = Element.getElements(".game-style-button-select-style-dice-red")
+const buttonSelectDiceRandom = Element.getElements(".game-style-button-select-random-style")
 const dices = Element.getElements('.dice-style') 
 
 const animationDiceSelected = ((button, element, animation) => {
@@ -12,6 +12,6 @@ const animationDiceSelected = ((button, element, animation) => {
     })
 })
 
-animationDiceSelected(buttonSelectDiceRed, dices[0], 'dice-style-one')
-animationDiceSelected(buttonSelectDiceDark, dices[1], 'dice-style-two')
-animationDiceSelected(buttonSelectDiceRandom, dices[2], 'dice-style-three')
+animationDiceSelected(buttonSelectDiceRed[0], dices[0], 'dice-style-one')
+animationDiceSelected(buttonSelectDiceDark[0], dices[1], 'dice-style-two')
+animationDiceSelected(buttonSelectDiceRandom[0], dices[2], 'dice-style-three')

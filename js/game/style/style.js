@@ -3,13 +3,14 @@ const btnSelectDiceRed = Element.getElement('.game-style-button-select-style-dic
 const btnSelectRandomStyle = Element.getElement('.game-style-button-select-random-style', 0)
 const gameStyleContent = Element.getElement('.game-style-content', 0)
 const game = Element.getElement('.game', 0)
+
 let diceRed;
 let diceDark;
 let randomDice;
 
 btnSelectDiceRed.addEventListener('click', () => {
-    dicePlayer1.setAttribute('src', dicesTheme[1] + 'dice1.png')
-    dicePlayer2.setAttribute('src', dicesTheme[1] + 'dice1.png')
+    dicePlayer1.attr('src', dicesTheme[1] + 'dice1.png')
+    dicePlayer2.attr('src', dicesTheme[1] + 'dice1.png')
     diceRed = true
     diceDark = false
     randomDice = false
@@ -17,8 +18,8 @@ btnSelectDiceRed.addEventListener('click', () => {
 
 })
 btnSelectDiceDark.addEventListener('click', () => {
-    dicePlayer1.setAttribute('src', dicesTheme[0] + 'dice1.png')
-    dicePlayer2.setAttribute('src', dicesTheme[0] + 'dice1.png')
+    dicePlayer1.attr('src', dicesTheme[0] + 'dice1.png')
+    dicePlayer2.attr('src', dicesTheme[0] + 'dice1.png')
     diceRed = false
     diceDark = true
     randomDice = false
@@ -26,6 +27,8 @@ btnSelectDiceDark.addEventListener('click', () => {
 })
 
 btnSelectRandomStyle.addEventListener('click', () => {
+    dicePlayer1.attr('src', dicesTheme[randomNumber] + 'dice1.png')
+    dicePlayer2.attr('src', dicesTheme[randomNumber] + 'dice1.png')
     diceRed = false
     diceDark = false
     randomDice = true

@@ -49,3 +49,19 @@
     font-size: 1.5rem;
     color: rgb(34, 33, 33);
 }
+
+@media (max-width: 992px) {
+    .about-img-perfil {
+        height: 21vh;
+    }
+    .social-media {
+        height: 22px;
+    }
+    .about-content-i-am {
+        font-size: 3.5rem;
+    }
+    .about-content-i-am-description {
+        font-size: 1.3rem;
+        
+    }
+}
