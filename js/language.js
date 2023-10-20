@@ -9,6 +9,8 @@ const portuguese = {
     '.navbar-item1': 'Inicio',
     '.navbar-item2': 'Sobre',
     '.navbar-dropdown': 'Linguagem (PT-BR)',
+    '.option-english': 'Inglês (EN)',
+    '.option-portuguese': 'Português (PT-BR)',
     '.home-title': 'Começar um novo jogo em dicex',
     '.home-subtitle': 'Dicex pode transmitir uma experiência épica em um duelo de dados!',
     '.home-button-play': 'VAMOS JOGAR',
@@ -17,16 +19,16 @@ const portuguese = {
     '.game-style-button-select-style-dice-red': 'Selecione',
     '.game-style-button-select-style-dice-dark': 'Selecione',
     '.game-style-button-select-random-style': 'Escolher aleatoriamente',
-    '.about-content-description': 'Eu sou estudante do IFCE',
-    '.about-content-i-am-description': 'tenho 17 years, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.',
     '.game-play-title': 'Iniciar!',
-    '.gpb': 'JOGAR'
+    '.game-button-to-play': 'JOGAR'
 }
 
 const english = {
     '.navbar-item1': 'Home',
     '.navbar-item2': 'About',
     '.navbar-dropdown': 'Language (EN)',
+    '.option-english': 'English (EN)',
+    '.option-portuguese': 'Portuguese (PT-BR)',
     '.home-title': 'Start a new game in dicex',
     '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!',
     '.home-button-play': 'LET´S PLAY',
@@ -35,10 +37,8 @@ const english = {
     '.game-style-button-select-style-dice-red': 'Select',
     '.game-style-button-select-style-dice-dark': 'Select',
     '.game-style-button-select-random-style': 'Randomly choose',
-    '.about-content-description': 'I am IFCE student',
-    '.about-content-i-am-description': "I'm 17 years old, and I'm currently in the 6th semester of the integrated computer science course at IFCE Campus Itapipoca.",
     '.game-play-title': 'Start!',
-    '.gpb': 'TO PLAY'
+    '.game-button-to-play': 'TO PLAY'
 }
 
 const textNavbarEnglish = {
@@ -55,7 +55,6 @@ const loadEventListeners = () => {
         e.preventDefault()
         verifyOptionSelected(e.target)
         console.log(e.target)
-        
     })
 }
 
@@ -90,8 +89,7 @@ const changeLanguage = ((response) => {
 
 const changeLanguageOfTexts = ((language, size) => {
     for(let i = 0; i < size; ++i) {
-        Element.getElement(Object.keys(language)[i], 0).innerHTML = (Object.values(language)[i])
-        // console.log((Object.values(language)[i]))    
+        Element.getElement(Object.keys(language)[i], 0).innerHTML = (Object.values(language)[i])  
     }
 })
 

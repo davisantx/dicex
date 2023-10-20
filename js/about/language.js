@@ -9,18 +9,22 @@ const portuguese = {
     '.navbar-item1': 'Inicio',
     '.navbar-item2': 'Sobre',
     '.navbar-dropdown': 'Linguagem (PT-BR)',
+    '.option-english': 'Inglês (EN)',
+    '.option-portuguese': 'Português (PT-BR)',
     '.about-content-description': 'Eu sou estudante do IFCE',
-    '.about-content-i-am': "Olá, eu sou o <span class='about-content-my-name'> davi </span>,",
-    '.about-content-i-am-description': 'tenho 17 anos, e atualmente estou no 6 semestre do curso técnico de informática integrado dos IFCE Campus Itapipoca.'
+    '.about-content-i-am': "Olá, eu sou o <span class='about-content-my-name'> davi </span>!",
+    '.about-content-i-am-description': 'Tenho 17 anos e, atualmente, estou no 6 semestre do curso técnico de informática integrado do IFCE Campus Itapipoca.'
 }
 
 const english = {
     '.navbar-item1': 'Home',
     '.navbar-item2': 'About',
     '.navbar-dropdown': 'Language (EN)',
+    '.option-english': 'English (EN)',
+    '.option-portuguese': 'Portuguese (PT-BR)',
     '.about-content-description': 'I am IFCE student',
     '.about-content-i-am': "Hello, I'm  <span class='about-content-my-name'> davi </span>",
-    '.about-content-i-am-description': "I'm 17 years old, and I'm currently in the 6th semester of the integrated computer science course at IFCE Campus Itapipoca."
+    '.about-content-i-am-description': "I am 17 years old and, currently, I am in the 6th semester of the integrated IT technical course at IFCE Campus Itapipoca."
 }
 
 const textNavbarEnglish = {
