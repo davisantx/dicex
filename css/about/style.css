@@ -10,19 +10,20 @@
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
+    padding: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .about-content-social-media-container {
     background: rgba(210, 207, 13, 0.169);
-    box-shadow: 0 8px 32px 0 rgba(131, 135, 31, 0.37);
+    box-shadow: 10px 8px 10px 2px rgba(64, 65, 33, 0.9);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 30px;
+    border-radius: 17px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .about-img-perfil {
-    height: 31vh;
+    height: 30vh;
     border-radius: 50%;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .social-media {
-    height: 40px;
+    height: 25px;
 }
 
 .about-content-i-am {
@@ -50,12 +51,17 @@
     color: rgb(34, 33, 33);
 }
 
+
+
 @media (max-width: 992px) {
     .about-img-perfil {
-        height: 21vh;
+        height: 25vh;
     }
     .social-media {
         height: 22px;
+    }
+    .about-content-social-media-container {
+        width: 190px;
     }
     .about-content-i-am {
         font-size: 3.5rem;
@@ -64,4 +70,47 @@
         font-size: 1.3rem;
         
     }
+}
+
+
+@media (max-width: 768px) {
+    .about-img-perfil {
+        height: 22vh;
+    }
+    .social-media {
+        height: 22px;
+    }
+    .about-content-nickname {
+        font-size: 1.5rem;
+    }
+    .about-content-description {
+        font-size: 0.9rem;
+    }
+    .about-content-i-am {
+        font-size: 3.4rem;
+    }
+    .about-content-i-am-description {
+        font-size: 1.2rem;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .about-img-perfil {
+        height: 19vh;
+    }
+    .social-media {
+        height: 16px;
+    }
+    .about-content-social-media-container {
+        width: 165px;
+    }
+    .about-content-i-am {
+        font-size: 3.2rem;
+    }
+    .about-content-i-am-description {
+        font-size: 1.1rem;
+        
+    }
+
 }

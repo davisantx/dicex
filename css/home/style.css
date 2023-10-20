@@ -89,7 +89,9 @@
         
     }
 }
-
+#home-buttons-sm {
+    display: none;
+}
 @media (max-width: 1199px) {
     .home-title {
         font-size: 5rem;
@@ -177,13 +179,23 @@
     .home-subtitle {
         font-size: 1.2rem;
     }
+    
     .home-img-dice {
         height: 270px;
         display: grid;
+    }
+
+    #home-buttons-lg {
+        display: none;
+    }
+    
+    #home-buttons-sm {
+        display: block;
     }
     .home-button-play, .home-button-repository {
         width: 300px;
         height: 60px;
         font-size: 1rem;
     }
+    
 }
