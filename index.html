@@ -9,6 +9,15 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" defer>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" defer>
+  </script>
 
   <!-- add JQuery -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
@@ -39,10 +48,10 @@
 <body class="vh-100">
 
   <!-- navbar -->
-  <header class="">
+  
     <nav class="container-md px-4 navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a class="navbar-brand" id="img-nav" href="index.html">
+          <a class="navbar-brand" href="index.html">
               <h3>dicex</h3>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -70,25 +79,22 @@
                   </ul>
                 </div>
               </div>
-            </li>
-              
-            </div>
-          </ul>
-          
+            </li> 
+          </ul> 
         </div>
       </nav>
-  </header>
+  
 
 <!-- content -->
 
   <!-- select a theme -->
-  <main class="game-style-content container d-flex justify-content-center d-none align-items-center">
-    <section class="about-content-glass game-style-dice-glass text-center m-5">
-      <h1 class="game-style-dice-title m-3 fw-bold">Select a dice for the duel</h1>
-      <div class=" d-flex justify-content-center align-items-center game-style-container">
-        <div class="row floating g-2">
+  <main class="game-style-content container-lg d-flex justify-content-center d-none align-items-center">
+    <section class="about-content-glass game-style-dice-glass text-center m-lg-5">
+      <h1 class="game-style-dice-title mt-5 m-lg-3 fw-bold">Select a dice for the duel</h1>
+      <div class="d-flex justify-content-center align-items-center game-style-container">
+        <div class="row floating gap-2">
           <div class="col">
-            <div class="selected-area p-5">
+            <div class="selected-area py-5">
               <img src="assets/img/dices/theme-red/dice1.png" alt="" class="dice-style floating">
             </div>
             <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-style-dice-red">
@@ -96,7 +102,7 @@
             </button>
           </div>
           <div class="col">
-            <div class="selected-area p-5">
+            <div class="selected-area py-5">
               <img src="assets/img/dices/theme-dark/dice1.png" alt="" class="dice-style floating">
            </div>
             <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-style-dice-dark">
@@ -104,7 +110,7 @@
             </button>
           </div>
           <div class="col">
-            <div class="selected-area p-5">
+            <div class="selected-area py-5">
               <img src="assets/img/dices/misterious/misterious.png" alt="" class="dice-style floating">
             </div>
             <button type="button" class="btn btn-lg mt-5 fw-bold game-style-button-select-style game-style-button-select-random-style">
@@ -139,10 +145,10 @@
   </main>
 
   <!-- home -->
-  <main class="home-content container-md d-flex align-items-center p-5">
+  <main class="home-content container-md d-flex align-items-center p-4 p-sm-5">
     <section class="home pt-5">
       <div class="row b">
-        <div class="col-sm-8 col-7 text-black text mt-2 font-weight-1000 b">
+        <div class="col-sm-8 col-12 text-black text mt-2 font-weight-1000 b">
           <div class="col">
             <h1 class="home-title">Start a new game in <span class="home-title-name-site">dicex</span></h1>
           </div>
@@ -151,13 +157,13 @@
               <span class="home-subtitle-name-site">Dicex</span> 
               can convey an epic experience in a dice duel!</p>
           </div>
-          <div class="row pt-3" id="home-buttons-lg">
-            <div class="col-sm-6 col-12">
+          <div class="row d-flex justify-content-center b pt-3" id="home-buttons-lg">
+            <div class="col-6 home-col-button-play">
               <button type="button" id="home-button-play-lg" class="btn btn-lg mt-5 text-white fw-bold home-button-play">
                 LET'S PLAY
               </button>
             </div>
-            <div class="col-sm-6 col-12">
+            <div class="col-6 home-col-button-repository">
               <a href="http://github.com/davisantx/dicex">
                 <button type="button" id="home-button-repository-lg" class="btn btn-lg mt-5 text-white fw-bold home-button-repository">
                   VIEW PROJECT REPOSITORY
@@ -168,55 +174,22 @@
           </div>
 
         </div>
-        <div class="col-sm-4 col-5">
+        <div class="col-sm-4">
           <img src="assets/img/home/dice.svg" class="floating home-img-dice">
         </div>
           
       </div>
-      <div class="row pt-3" id="home-buttons-sm">
-        <div class="col-sm-8 col-7">
-          <div class="row">
-            <div class="col-6">
-              <button type="button" class="btn btn-lg mt-5 text-white fw-bold home-button-play">
-                LET'S PLAY
-              </button>
-            </div>
-            <div class="col-6">
-              <a href="http://github.com/davisantx/dicex">
-                <button type="button" class="btn btn-lg mt-5 text-white fw-bold home-button-repository">
-                  VIEW PROJECT REPOSITORY
-                </button>
-              </a>
-              
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-sm-4 col-5"></div>
-        
-      </div>
+      
     </section>
-    
-    
-    
   </main>
 
-  
+
+  <footer>
+    
+  </footer>
 
 
-  
-  
 </body>
-   
-<!-- Bootstrap JavaScript Libraries -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-</script>
 
 
 </html>

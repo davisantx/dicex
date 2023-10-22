@@ -44,11 +44,27 @@ buttonPlay[0].addEventListener("click", () => {
 
 const getPlayerWin = () => {
     if(randomNumPlayer1 > randomNumPlayer2) {
-        gameTitle.innerHTML = 'Jogador 1 venceu'
+        if(isPortuguese) {
+            gameTitle.innerHTML = 'Jogador 1 venceu!'
+        }else {
+            gameTitle.innerHTML = 'Player 1 won!'
+            
+        }
+        
     }else if(randomNumPlayer1 == randomNumPlayer2) {
-        gameTitle.innerHTML = 'Empate'
+        if(isPortuguese) {
+            gameTitle.innerHTML = 'Empate!'
+        }else {
+            gameTitle.innerHTML = 'A tie!'
+        }
+        
     }else {
-        gameTitle.innerHTML = 'Jogador 2 venceu'
+        if(isPortuguese) {
+            gameTitle.innerHTML = 'Jogador 2 venceu!'
+        }else {
+            gameTitle.innerHTML = 'Player 2 won!'
+        }
+        
     }
 }
 

@@ -1,5 +1,7 @@
 const dropdown = Element.getElement('.home-navbar-dropdown', 0);
 
+let isPortuguese = false
+
 const languages = {
     'english': Element.getElement('.option-english', 0),
     'portuguese': Element.getElement('.option-portuguese', 0)
@@ -32,7 +34,9 @@ const english = {
     '.home-title': 'Start a new game in dicex',
     '.home-subtitle': 'Dicex can convey an epic experience in a dice duel!',
     '.home-button-play': 'LET´S PLAY',
+    '.home-button-play-sm': 'LET´S PLAY',
     '.home-button-repository' : 'VIEW PROJECT REPOSITORY',
+    '.home-button-repository-sm' : 'VIEW PROJECT REPOSITORY',
     '.game-style-dice-title': 'Select a dice for the duel',
     '.game-style-button-select-style-dice-red': 'Select',
     '.game-style-button-select-style-dice-dark': 'Select',
@@ -63,12 +67,14 @@ const verifyOptionSelected = ((optionSelected) => {
         languages['english'].classList.add('fw-bold')
         languages['portuguese'].classList.remove('fw-bold')
         changeLanguage(false)
+        isPortuguese = false
         // continued in english
     }
     else if(optionSelected.innerText == languages['portuguese'].textContent) {
         languages['portuguese'].classList.add('fw-bold')
         languages['english'].classList.remove('fw-bold')
         changeLanguage(true)
+        isPortuguese = true
     }
     
 })

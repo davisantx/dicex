@@ -15,7 +15,7 @@
 }
 .about-content-social-media-container {
     background: rgba(210, 207, 13, 0.169);
-    box-shadow: 10px 8px 10px 2px rgba(64, 65, 33, 0.9);
+    box-shadow: 8px 8px 1px 1px rgba(64, 65, 33, 0.9);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 17px;
@@ -52,7 +52,7 @@
 }
 
 
-
+/* responsiveness */
 @media (max-width: 992px) {
     .about-img-perfil {
         height: 25vh;
@@ -104,6 +104,26 @@
     }
     .about-content-social-media-container {
         width: 165px;
+    }
+    .about-content-i-am {
+        font-size: 3.2rem;
+    }
+    .about-content-i-am-description {
+        font-size: 1.1rem;
+        
+    }
+
+}
+
+@media (max-width: 503px) {
+    .about-img-perfil {
+        height: 19vh;
+    }
+    .social-media {
+        height: 12px;
+    }
+    .about-content-social-media-container {
+        width: 150px;
     }
     .about-content-i-am {
         font-size: 3.2rem;
